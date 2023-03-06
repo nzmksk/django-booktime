@@ -1,0 +1,68 @@
+[
+  {
+    "model": "main.producttag",
+    "pk": 1,
+    "fields": {
+      "name": "Flutter",
+      "slug": "flutter",
+      "description": "",
+      "active": true,
+      "products": [1]
+    }
+  },
+  {
+    "model": "main.producttag",
+    "pk": 2,
+    "fields": {
+      "name": "Technical",
+      "slug": "technical",
+      "description": "",
+      "active": true,
+      "products": []
+    }
+  },
+  {
+    "model": "main.producttag",
+    "pk": 3,
+    "fields": {
+      "name": "Non-Fiction",
+      "slug": "non-fiction",
+      "description": "",
+      "active": true,
+      "products": []
+    }
+  },
+  {
+    "model": "main.producttag",
+    "pk": 4,
+    "fields": {
+      "name": "Fiction",
+      "slug": "fiction",
+      "description": "",
+      "active": true,
+      "products": []
+    }
+  },
+  {
+    "model": "main.producttag",
+    "pk": 5,
+    "fields": {
+      "name": "Mobile Development",
+      "slug": "mobile-development",
+      "description": "",
+      "active": true,
+      "products": []
+    }
+  },
+  {
+    "model": "main.producttag",
+    "pk": 6,
+    "fields": {
+      "name": "Dart",
+      "slug": "dart",
+      "description": "",
+      "active": true,
+      "products": []
+    }
+  }
+]
