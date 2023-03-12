@@ -10,5 +10,6 @@ urlpatterns = [
     path('product/<slug:slug>/',
          DetailView.as_view(model=models.Product), name='product'),
     path('products/<slug:tag>/', views.ProductListView.as_view(), name='products'),
+    path('signup/', views.SignUpView.as_view(), name='signup'),
     path('', TemplateView.as_view(template_name='home.html'), name='home'),
 ]
