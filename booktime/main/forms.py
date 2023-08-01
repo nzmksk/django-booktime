@@ -2,6 +2,7 @@ from django import forms
 from django.contrib.auth import authenticate
 from django.contrib.auth.forms import UserCreationForm as DjangoUserCreationForm, UsernameField
 from django.core.mail import send_mail
+from django.forms import inlineformset_factory
 from . import models
 import logging
 
@@ -73,3 +74,7 @@ class ContactForm(forms.Form):
 
     name = forms.CharField(label='Your name', max_length=100)
     message = forms.CharField(max_length=600, widget=forms.Textarea)
+
+
+BasketLineFormSet = inlineformset_factory(
+    models.Basket, models.BasketLine, fields=("quantity",), extra=0)
