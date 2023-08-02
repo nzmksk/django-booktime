@@ -4,6 +4,7 @@ from django.contrib.auth.forms import UserCreationForm as DjangoUserCreationForm
 from django.core.mail import send_mail
 from django.forms import inlineformset_factory
 from . import models
+from . import widgets
 import logging
 
 logger = logging.getLogger(__name__)
@@ -77,4 +78,9 @@ class ContactForm(forms.Form):
 
 
 BasketLineFormSet = inlineformset_factory(
-    models.Basket, models.BasketLine, fields=("quantity",), extra=0)
+    models.Basket,
+    models.BasketLine,
+    fields=("quantity",),
+    extra=0,
+    widgets={"quantity": widgets.PlusMinusNumberInput},
+)
